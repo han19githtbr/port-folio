@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #3a3a3a;
+    border-bottom: 1px solid white;
+}
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header > .center{
+    display: flex;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+nav{
+    width: 90%;
+}
+nav.desktop ul{
+    list-style-type: none;
+    text-align: right;
+    padding: 15px 0;
+}
+nav.desktop ul li{
+    display: inline;
+    padding: 0 15px;
+}
+nav.desktop a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover{
+    border-bottom: 1px solid white;
+}
+nav.mobile{
+    display: none;
+}
+.banner{
+    width: 100%;
+    min-height: 500px;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.apresentacao{
+    width: 100%;
+}
+.meus-dados{
+    max-width: 770px;
+    margin: 0 auto;
+    display: flex;
+}
+.mypicture{
+    width: 50%;            
+}
+.minha-foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url("../img/Handy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;    
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    bottom: 140px;
+}
+.icone{
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 5px;
+    position: relative;
+    top: 0;    
+}
+.icone i{    
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    text-decoration: none;
+    color: #000; 
+}
+.icone i a{     
+    text-decoration: none;
+    color: #000; 
+}
+.description{
+    width: 50%;
+}
+.description h1{     
+    font-size: 25px;
+    color: #707070;
+    opacity: 1; 
+    font-weight: bold;
+    margin-top: 15px;   
+}
+.description h3{     
+    font-size: 20px;
+    color: #707070;
+    opacity: 1; 
+    font-style: italic; 
+    font-weight: lighter; 
+    padding: 10px 0;  
+}
+.description p{     
+    font-size: 15px;
+    color: #707070;
+    opacity: 1;     
+    font-weight: lighter; 
+    padding: 10px 0;  
+}
+.formacao{
+    width: 100%;
+    background-color: #dedede;
+    padding: 30px 0;
+}
+.formacao h2{
+    font-size: 30px;
+    color: #707070;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.borda-form{
+    margin-bottom: 15px;
+}
+.borda{
+    width: 8px;
+    height: 66px;
+    background-color: black;
+    display: inline-block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form-description{
+    margin-left: 5px;
+    display:inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+.form-description p{
+    font-size: 12px;
+    color: #707070;
+    opacity: 1;
+    text-transform: uppercase;
+}
+.form-description h3{
+    font-size: 15px;
+    color: #707070;
+    opacity: 1;
+}
+.experiencia{
+    width: 100%;
+    background-color: #707070;
+    padding: 30px 0;
+}
+.experiencia h2{
+    font-size: 30px;
+    color: #999999;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.nova-borda{
+    width: 8px;
+    height: 66px;
+    background-color: white;
+    display: inline-block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.novo-form-description{
+    margin-left: 5px;
+    display:inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+.novo-form-description p{
+    font-size: 12px;
+    color: #999999;
+    opacity: 1;
+    text-transform: uppercase;
+}
+.novo-form-description h3{
+    font-size: 15px;
+    color: #999999;
+    opacity: 1;
+}
+.projetos{
+    width: 100%;
+    padding: 30px 0;
+}
+.projetos h2{
+    font-size: 30px;
+    color: #707070;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.info-card{
+    padding: 5px 10px;
+}
+.info-card img{
+    width: 100%;
+}
+.info-card h3{
+    font-size: 15px;
+    color: #999999;
+    opacity: 1;
+}
+.info-card p{
+    font-size: 12px;
+    color: #999999;
+    opacity: 1;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+button{
+    width: 40%;
+    background-color: #585858;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.contato{
+    width: 100%;
+    background-color: black;
+    padding: 30px 0;
+}
+.contato h2{
+    font-size: 30px;
+    color: white;   
+    margin-bottom: 15px; 
+}
+.info-form{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+.info p{
+    color: #707070;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.sociais{
+    display: flex;
+    flex-direction: row;
+}
+.redes{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 5px;
+    position: relative;
+    top: 0;
+}
+.redes i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #000;
+}
+.redes i a{
+    text-decoration: none;
+    color: #000;
+}
+.form{
+    width: 50%;
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: white;
+    font-size: 17px;
+    padding: 5px 0;
+}
+.form input{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    outline: 0;
+}
+.form textarea{
+    resize: vertical;
+}
+.form input[type=submit] {
+    cursor: pointer;
+    background-color: #585858;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    display: block;
+    border-radius: 30px;
+    margin: 15px auto;
+    font-size: 15px;
+    outline: 0;
+}
+
+@media screen and (max-width: 768px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+        text-align: right;
+    }
+    nav.mobile i{
+        font-size: 25px;
+        color: white;
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    }
+    nav.mobile ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        top: 75px;
+        background-color: white;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav.mobile li{
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    nav.mobile li a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+    .meus-dados{
+        flex-direction: column;
+    }
+    .mypicture, .description{
+        width: 100%;
+    }
+    .minha-foto{
+        bottom: 50px;
+    }
+    .card{
+        width: 100%;
+    }
+    .info-form{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+}
